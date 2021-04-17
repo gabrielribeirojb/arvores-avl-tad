@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1618668871 source:c:\users\gaabr\onedrive\Área de trabalho\workspacec\02-arvores-avl\arvores-avl-tda-impl.c
+	<stdio.h>
+	<stdlib.h>
+	"arvores-avl-tda.h"
+
+1618668948 c:\users\gaabr\onedrive\Área de trabalho\workspacec\02-arvores-avl\arvores-avl-tda.h
+
+1618668630 source:c:\users\gaabr\onedrive\Área de trabalho\workspacec\02-arvores-avl\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arvores-avl-tda.h"
+

@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include "arvores-avl-tda.h"
+
+PONT inicializa(){
+    return (NULL);
+}
+
+PONT criaNo(TIPOCHAVE ch){
+    PONT novoNo = (PONT)malloc(sizeof(NO));
+    novoNo->esq = NULL;
+    novoNo->dir = NULL;
+    novoNo->chave = ch;
+    novoNo->h = 0;
+    return (novoNo);
+}
+
+//Método auxiliar para retornar o nó + 1 (mais distante)
+int max(int a, int b){
+    if(a>b) return a;
+    return b;
+}
+
+//Rotação à direita
+PONT direita(PONT r){
+    PONT aux;
+    aux = r->esq;
+    r->esq = aux->dir;
+    r->h = max(altura(r->dir),altura(r->esq)+1);
+    aux->h = max(altura(aux->esq), r->h) +1;
+    return (aux);
+}
+
+//Rotação à esquerda
+PONT esquerda(PONT r){
+
+}
+
+
+
